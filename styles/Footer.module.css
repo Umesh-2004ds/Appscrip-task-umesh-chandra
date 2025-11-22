@@ -1,0 +1,277 @@
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletterTitle {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.newsletterText {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 8px;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid #333333;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletterInput::placeholder {
+  color: #888888;
+}
+
+.newsletterInput:focus {
+  border-color: #ffffff;
+}
+
+.subscribeButton {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactTitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.contactItem {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.currencyTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.currencySelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.currencyFlag {
+  font-size: 20px;
+}
+
+.currencyCode {
+  font-weight: 600;
+}
+
+.currencyNote {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 8px;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #333333;
+  margin: 40px 0;
+}
+
+
+.footerMiddle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerColumnTitle {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLinks a {
+  font-size: 14px;
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #ffffff;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.socialIcon {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #cccccc;
+  transform: scale(1.1);
+}
+
+.paymentTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.paymentMethods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.paymentIcon {
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+.footerBottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #888888;
+}
+
+
+@media (max-width: 1024px) {
+  .footerMiddle {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 16px 20px;
+  }
+
+  .footerTop {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+  }
+
+  .subscribeButton {
+    width: fit-content;
+  }
+
+  .footerMiddle {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .paymentMethods {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletterTitle {
+    font-size: 18px;
+  }
+
+  .contactTitle,
+  .footerColumnTitle {
+    font-size: 14px;
+  }
+
+  .newsletterInput,
+  .subscribeButton,
+  .contactItem,
+  .footerLinks a {
+    font-size: 12px;
+  }
+
+  .paymentMethods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

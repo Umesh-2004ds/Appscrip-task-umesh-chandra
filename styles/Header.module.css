@@ -1,0 +1,207 @@
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.topBanner {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.topBannerContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.bannerItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bannerIcon {
+  font-size: 16px;
+}
+
+
+.mainHeader {
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.headerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.brandName {
+  flex: 1;
+  text-align: center;
+}
+
+.brandName h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.iconButton {
+  padding: 8px;
+  color: #333333;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  color: #666666;
+}
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.languageButton:hover {
+  color: #666666;
+}
+
+
+.navigation {
+  padding: 16px 0;
+}
+
+.navList {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #666666;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333333;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .topBannerContent {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bannerItem {
+    font-size: 10px;
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .brandName h1 {
+    font-size: 24px;
+  }
+
+  .headerActions {
+    gap: 16px;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topBanner {
+    display: none;
+  }
+
+  .brandName h1 {
+    font-size: 20px;
+  }
+
+  .headerActions {
+    gap: 12px;
+  }
+
+  .iconButton {
+    padding: 6px;
+  }
+
+  .navList {
+    gap: 16px;
+    justify-content: space-around;
+  }
+
+  .navLink {
+    font-size: 12px;
+  }
+}
